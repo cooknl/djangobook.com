@@ -599,8 +599,8 @@ give you helpful information about what was wrong with the code.
 Any time you think you have problems with your models, run
 ``python manage.py validate``. It tends to catch all the common model problems.
 
-.. admonition:: "validate" command deprecated in Django 1.7
-	The command "validate" was replaced with "check" in 1.7
+.. admonition:: ``validate`` command deprecated in Django 1.7
+	The command ``validate`` was replaced with ``check`` in 1.7
 	https://docs.djangoproject.com/en/1.7/ref/django-admin/#django-admin-check
 
 If your models are valid, run the following command for Django to generate
@@ -649,6 +649,11 @@ should see something like this::
     COMMIT;
 
 .. SL Tested ok (sqlall output for postgres matches that shown here)
+
+.. admonition:: "sqlall" deprecated in 1.7
+	"sqlall" was removed in 1.7 and replaced with "sqlmigrate" as part of the migration workflow
+	https://docs.djangoproject.com/en/1.9/topics/migrations/
+
 
 Note the following:
 
